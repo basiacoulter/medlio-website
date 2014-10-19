@@ -70,8 +70,14 @@ header [class*="col-"] {
 header, .main {
 	background-color: #ef4423;
 }
-hgroup, .glyphicon-align-justify, .login, .signup, .learn {
+hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn {
 	color:#fff;
+}
+.find .glyphicon-align-justify {
+	color: #999;
+}
+h1, p.login, p.signup, p.watch-video, button.geolocation, .find ul.dropdown-menu {
+	text-transform: uppercase;
 }
 hgroup {
 	text-align: center;
@@ -79,7 +85,6 @@ hgroup {
 }
 h1 {
 	font-size: 3em;
-	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	margin-top: 1em;
 	margin-bottom: 0.2em;
@@ -87,14 +92,13 @@ h1 {
 h2 {
 	font-size: 1.5em;
 }
-.glyphicon-align-justify {
+.menu .glyphicon-align-justify {
 	font-size: 1.4em;
 	padding-top: 0.3em;
 }
 p.login, p.signup {
 	float: right;
 	text-align: center;
-	text-transform: uppercase;
 	border: 2px solid #fff;
 	width: 60%;
 	padding-top: 0.5em;
@@ -106,7 +110,6 @@ p.learn {
 }
 p.watch-video {
 	text-align: center;
-	text-transform: uppercase;
 	width: 50%;
 	margin-top: 1.2em;
 	border: 2px solid #fff;
@@ -116,6 +119,93 @@ p.watch-video {
 	background-image: url('../img/three-phones-large.png');
 	background-repeat: no-repeat;
 	background-position: center 240px;
+}
+div.searchbox {
+	padding-right: 1px;
+	padding-left: 1px;
+}
+.find input.find, .geolocation input.geolocation {
+	height: 3em;
+}
+input.find {
+	
+}
+
+input.find.form-control::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: 1.2em;
+    background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+input.find.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #ccc; 
+    font-size: 1.2em; 
+    background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+input.find.form-control::-moz-placeholder {  /* Firefox 19+ */
+    color: #ccc;  
+    font-size: 1.2em;
+    background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+input.find.form-control:-ms-input-placeholder {  
+    color: #ccc;  
+    font-size: 1.2em;
+    background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+input.geolocation.form-control::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: 1.2em;
+    background-image: url('../img/marker.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+input.geolocation.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #ccc; 
+    font-size: 1.2em; 
+    background-image: url('../img/marker.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+input.geolocation.form-control::-moz-placeholder {  /* Firefox 19+ */
+    color: #ccc;  
+    font-size: 1.2em;
+    background-image: url('../img/marker.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+input.geolocation.form-control:-ms-input-placeholder {  
+    color: #ccc;  
+    font-size: 1.2em;
+    background-image: url('../img/marker.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+button.find, button.geolocation {
+	height: 3em;
+}
+button.find {
+	background-color: #e7e8e8;
+}
+button.geolocation {
+	background-color: #999;
+	color: #fff;
+}
+.find ul.dropdown-menu {
+	background-color: #e7e8e8;
+}
+.find ul.dropdown-menu li a {
+	color: #666;
 }
 section.learn {
 	background-color: #6dcde3;

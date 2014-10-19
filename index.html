@@ -7,9 +7,6 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,600,600italic,700italic' rel='stylesheet' type='text/css'>
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
 <body class="home">
 	<div class="container-fluid">
 		<header class="row">
@@ -46,42 +43,36 @@
 							<h2>Find and connect with the best healthcare services for you</h2>
 						</hgroup>
 					<div class="row">
-						<div class="col-xs-12 col-sm-5 col-sm-offset-1">
-							<div class="input-group">
+						<div class="searchbox col-xs-12 col-sm-5 col-sm-offset-1">
+							<div class="find input-group">
 				  				
 				  				<div class="input-group-btn">
 				    				<div class="btn-group">
-									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-									    Action <span class="caret"></span>
+									  <button type="button" class="find btn btn-default dropdown-toggle" data-toggle="dropdown">
+									    <span class="glyphicon glyphicon-align-justify"></span> <span class="caret"></span>
 									  </button>
 									  <ul class="dropdown-menu" role="menu">
-									    <li><a href="#">Action</a></li>
-									    <li><a href="#">Another action</a></li>
-									    <li><a href="#">Something else here</a></li>
-									    <li class="divider"></li>
-									    <li><a href="#">Separated link</a></li>
+									    <li><a href="#">Physicians</a></li>
+									    <li><a href="#">Hospitals</a></li>
+									    <li><a href="#">Emergency Rooms</a></li>
+									    <li><a href="#">Urgent Care</a></li>
+									    <li><a href="#">Pharmacies</a></li>
+									     <li><a href="#">Pharmacy Clinics</a></li>
 									  </ul>
 									</div>
 				  				</div>
-
-				  				<input type="text" class="form-control">
+				  				<input type="text" class="find form-control" placeholder="Find by name, specialty, or condition">
 							</div>	
 						</div>	
-						<div class="col-xs-12 col-sm-5">		
-							<div class="input-group">
-				  				<div class="input-group-btn">
-				    			<!-- Button and dropdown menu -->
-				  				</div>
-				  				<input type="text" class="form-control">
+						<div class="searchbox col-xs-12 col-sm-5">		
+							<div class="geolocation input-group">
+				  				<input type="text" class="geolocation form-control" placeholder="Raleigh, NC">
+				  				<span class="input-group-btn">
+        							<button class="geolocation btn btn-default" type="button">Search</button>
+     							</span>
 							</div>	
 						</div>
 					</div><!--end row-->
-
-
-
-
-
-
 
 
 					</div>
@@ -174,7 +165,8 @@
 			</div>
 		</footer>
 	</div><!--end container-fluid-->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 
