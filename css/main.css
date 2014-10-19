@@ -4,7 +4,7 @@
 	border: 1px solid #eee;
 	min-height: 50px;
 }
-header [class*="col-"], .main [class*="col-"], .learn [class*="col-"]  {
+header [class*="col-"], .main [class*="col-"], .learn [class*="col-"] {
 	border: none;
 }
 
@@ -70,11 +70,14 @@ header [class*="col-"] {
 header, .main {
 	background-color: #ef4423;
 }
-hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn {
-	color:#fff;
+hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn, a p.watch-video {
+	color: #fff;
 }
 .find .glyphicon-align-justify {
 	color: #999;
+}
+.learn a {
+	text-decoration: none;
 }
 h1, p.login, p.signup, p.watch-video, button.geolocation, .find ul.dropdown-menu {
 	text-transform: uppercase;
@@ -96,6 +99,9 @@ h2 {
 	font-size: 1.4em;
 	padding-top: 0.3em;
 }
+p.login, p.signup, p.watch-video {
+	display: block;
+}
 p.login, p.signup {
 	float: right;
 	text-align: center;
@@ -107,12 +113,17 @@ p.login, p.signup {
 }
 p.learn {
 	font-style: italic;
+	font-size: 1.2em;
+	line-height: 2em;
+	padding-right: 2em;
 }
 p.watch-video {
 	text-align: center;
-	width: 50%;
+	width: 60%;
 	margin-top: 1.2em;
 	border: 2px solid #fff;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 .meet-medlio {
 	height: 600px;
@@ -127,70 +138,38 @@ div.searchbox {
 .find input.find, .geolocation input.geolocation {
 	height: 3em;
 }
-input.find {
-	
-}
-
 input.find.form-control::-webkit-input-placeholder {
     color: #ccc;
     font-size: 1.2em;
-    background-image: url('../img/search.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
-
 input.find.form-control:-moz-placeholder { /* Firefox 18- */
     color: #ccc; 
     font-size: 1.2em; 
-    background-image: url('../img/search.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
 input.find.form-control::-moz-placeholder {  /* Firefox 19+ */
     color: #ccc;  
     font-size: 1.2em;
-    background-image: url('../img/search.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
 input.find.form-control:-ms-input-placeholder {  
     color: #ccc;  
     font-size: 1.2em;
-    background-image: url('../img/search.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
-
 input.geolocation.form-control::-webkit-input-placeholder {
     color: #ccc;
     font-size: 1.2em;
-    background-image: url('../img/marker.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
-
 input.geolocation.form-control:-moz-placeholder { /* Firefox 18- */
     color: #ccc; 
     font-size: 1.2em; 
-    background-image: url('../img/marker.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
 input.geolocation.form-control::-moz-placeholder {  /* Firefox 19+ */
     color: #ccc;  
     font-size: 1.2em;
-    background-image: url('../img/marker.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
 input.geolocation.form-control:-ms-input-placeholder {  
     color: #ccc;  
     font-size: 1.2em;
-    background-image: url('../img/marker.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 }
-
 button.find, button.geolocation {
 	height: 3em;
 }
@@ -209,14 +188,20 @@ button.geolocation {
 }
 section.learn {
 	background-color: #6dcde3;
-	padding-top: 2em;
-	padding-bottom: 1.8em;
+	padding-top: 6em;
+	padding-bottom: 6em;
 	border-top: 5px solid #dcddde;
 	border-bottom: 5px solid #dcddde;
 	line-height: 1.4em;
 }
+div.girl {
+	position: relative;
+}
 section.features {
 	background: url('../img/crosses.png') top center;
+}
+div.features-white {
+	background-color: #fff;
 }
 footer {
 	background-color: #414142;
@@ -232,9 +217,13 @@ img.google {
 	padding-top: 0.3em;
 }
 img.appstore {
-
 	padding-top: 0.35em;
 	padding-left: 0.5em;
+}
+img.girl{
+	position: absolute;
+	bottom: -190px;
+	right: 140px;
 }
 
 /* Media query */
@@ -243,7 +232,7 @@ img.appstore {
 		padding-top: 0.1em;
 	}
 	hgroup {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 	}
 	h1 {
 		font-size: 2.2em;
@@ -252,11 +241,23 @@ img.appstore {
 		font-size: 1em;
 	}
 	.meet-medlio {
-		height: 400px;
+		height: 420px;
 		background-image: url('../img/three-phones-small.png');
 		background-repeat: no-repeat;
-		background-position: center 260px;
+		background-position: center 300px;
 		background-size: 90%;
+	}
+	p.watch-video {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 530px) {
+	section.learn {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	p.learn {
+		padding-right: 0;
 	}
 }
 @media screen and (min-width : 481px) and (max-width : 528px) {
@@ -282,6 +283,9 @@ img.appstore {
 		background-position: center 300px;
 		background-size: 90%;
 	}
+	p.watch-video {
+		width: 50%;
+	}
 }
 @media screen and (min-width : 768px) and (max-width : 996px) {
 	hgroup {
@@ -295,6 +299,12 @@ img.appstore {
 		background-size: 90%;
 	}
 }
+@media screen and (min-width : 768px) and (max-width : 1200px) {
+		p.watch-video {
+		width: 80%;
+	}
+}
+
 @media screen and (min-width : 996px) and (max-width : 1200px) {
 	.meet-medlio {
 		height: 500px;
@@ -315,6 +325,9 @@ img.appstore {
     img.google {
 		padding-left: 0.5em;
 	}
+	.girl.col-xs-12.col-sm-7 {
+		display: none;
+	}
 }
 @media screen and (min-width: 530px) and (max-width: 600px) {
 	 img.logo {
@@ -331,6 +344,14 @@ img.appstore {
 	 .glyphicon-align-justify {
 		padding-top: 0.2em;
 	}
+	section.learn {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	img.girl {
+		bottom: -200px;
+		right: 60px;
+	}
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
 	 img.logo {
@@ -338,13 +359,20 @@ img.appstore {
 	 	margin-left: 15%;
 	 }
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	section.learn {
+		padding-bottom: 4em;
+	}
+	img.girl {
+		right: 100px;
+	}
+}
 @media screen and (min-width: 1200px) {
 	 img.logo {
 	 	width: 80%;
 	 	margin-left: 10%;
 	 }
 }
-
 
 
 
