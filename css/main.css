@@ -79,7 +79,7 @@ hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn, a p.watch-video
 .learn a {
 	text-decoration: none;
 }
-h1, p.login, p.signup, p.watch-video, button.geolocation, .find ul.dropdown-menu {
+h1, p.login, p.signup, p.watch-video, p.features, button.geolocation, .find ul.dropdown-menu {
 	text-transform: uppercase;
 }
 hgroup {
@@ -117,13 +117,24 @@ p.learn {
 	line-height: 2em;
 	padding-right: 2em;
 }
-p.watch-video {
+p.watch-video, p.features {
 	text-align: center;
+
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+p.watch-video {
 	width: 60%;
 	margin-top: 1.2em;
 	border: 2px solid #fff;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+}
+p.features {
+	font-size: 1.6em;
+	color:#ef4423;
+	background: #fff;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+	border: 2px solid #ccc;
 }
 .meet-medlio {
 	height: 600px;
@@ -141,34 +152,50 @@ div.searchbox {
 input.find.form-control::-webkit-input-placeholder {
     color: #ccc;
     font-size: 1.2em;
+    background: url('../img/search.png') no-repeat left center;
+    background-size: 1.6em;
 }
 input.find.form-control:-moz-placeholder { /* Firefox 18- */
     color: #ccc; 
     font-size: 1.2em; 
+    background: url('../img/search.png') no-repeat left  center;
+    background-size: 1.6em;
 }
 input.find.form-control::-moz-placeholder {  /* Firefox 19+ */
     color: #ccc;  
     font-size: 1.2em;
+    background: url('../img/search.png') no-repeat left  center;
+    background-size: 1.6em;
 }
 input.find.form-control:-ms-input-placeholder {  
     color: #ccc;  
     font-size: 1.2em;
+    background: url('../img/search.png') no-repeat left  center;
+    background-size: 1.6em;
 }
 input.geolocation.form-control::-webkit-input-placeholder {
     color: #ccc;
     font-size: 1.2em;
+    background: url('../img/marker.png') no-repeat left  center;
+    background-size: 1.3em;
 }
 input.geolocation.form-control:-moz-placeholder { /* Firefox 18- */
     color: #ccc; 
     font-size: 1.2em; 
+    background: url('../img/marker.png') no-repeat left  center;
+    background-size: 1.5em;
 }
 input.geolocation.form-control::-moz-placeholder {  /* Firefox 19+ */
     color: #ccc;  
     font-size: 1.2em;
+    background: url('../img/marker.png') no-repeat left  center;
+    background-size: 1.5em;
 }
 input.geolocation.form-control:-ms-input-placeholder {  
     color: #ccc;  
     font-size: 1.2em;
+    background: url('../img/marker.png') no-repeat left  center;
+    background-size: 1.5em;
 }
 button.find, button.geolocation {
 	height: 3em;
@@ -250,6 +277,10 @@ img.girl{
 	p.watch-video {
 		width: 100%;
 	}
+	p.features {
+		width: 80%;
+		margin-left: 10%;
+	}
 }
 @media screen and (max-width: 530px) {
 	section.learn {
@@ -286,6 +317,10 @@ img.girl{
 	p.watch-video {
 		width: 50%;
 	}
+	p.features {
+		width: 60%;
+		margin-left: 20%;
+	}
 }
 @media screen and (min-width : 768px) and (max-width : 996px) {
 	hgroup {
@@ -298,11 +333,16 @@ img.girl{
 		background-position: center 240px;
 		background-size: 90%;
 	}
+	p.features {
+		width: 100%;	
+		font-size: 1.2em;
+	}
 }
 @media screen and (min-width : 768px) and (max-width : 1200px) {
-		p.watch-video {
+	p.watch-video {
 		width: 80%;
 	}
+	
 }
 
 @media screen and (min-width : 996px) and (max-width : 1200px) {
