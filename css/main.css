@@ -4,7 +4,7 @@
 	border: 1px solid #eee;
 	min-height: 50px;
 }
-header [class*="col-"], .main [class*="col-"], .learn [class*="col-"], .features [class*="col-"] {
+header [class*="col-"], .main [class*="col-"], .learn [class*="col-"], .features [class*="col-"], .footer-top [class*="col-"] {
 	border: none;
 }
 
@@ -71,7 +71,7 @@ header [class*="col-"] {
 header, .main {
 	background-color: #ef4423;
 }
-hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn, a p.watch-video {
+hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn, a p.watch-video, footer {
 	color: #fff;
 }
 .find .glyphicon-align-justify {
@@ -80,11 +80,13 @@ hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn, a p.watch-video
 .learn a {
 	text-decoration: none;
 }
-h1, p.login, p.signup, p.watch-video, h2.features, button.geolocation, .find ul.dropdown-menu {
+h1, footer h3, p.login, p.signup, p.watch-video, h2.features, button.geolocation, .find ul.dropdown-menu {
 	text-transform: uppercase;
 }
-hgroup {
+hgroup, .features, h2.features, footer h3, p.login, p.signup, p.watch-video, footer .mid-bottom {
 	text-align: center;
+}
+hgroup {
 	margin-bottom: 2.4em;
 }
 h1 {
@@ -100,20 +102,6 @@ h3 {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
-.menu .glyphicon-align-justify {
-	font-size: 1.4em;
-	padding-top: 0.2em;
-}
-.features {
-	text-align: center;
-}
-.features-white {
-	padding-top: 4em;
-	padding-bottom: 4em;
-}
-.features h3, h2.features {
-	color:#ef4423;
-}
 h2.features {
 	width: 60%;
 	font-size: 1.6em;
@@ -123,8 +111,20 @@ h2.features {
 	margin-left: 20%;
 	border: 2px solid #ccc;
 }
+.features h3, h2.features {
+	color:#ef4423;
+}
 .features h3 {
 	font-weight: bold;
+}
+
+.menu .glyphicon-align-justify {
+	font-size: 1.4em;
+	padding-top: 0.2em;
+}
+.features-white {
+	padding-top: 4em;
+	padding-bottom: 6em;
 }
 .features p {
 	line-height: 1.6em;
@@ -132,9 +132,10 @@ h2.features {
 p.login, p.signup, p.watch-video {
 	display: block;
 }
-p.login, p.signup {
+header p.login, header p.signup {
 	float: right;
-	text-align: center;
+}
+p.login, p.signup {
 	border: 2px solid #fff;
 	width: 60%;
 	padding-top: 0.5em;
@@ -148,7 +149,6 @@ p.learn {
 	padding-right: 2em;
 }
 p.watch-video, h2.features {
-	text-align: center;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
@@ -156,6 +156,12 @@ p.watch-video {
 	width: 60%;
 	margin-top: 1.2em;
 	border: 2px solid #fff;
+}
+footer p.signup {
+	width: 40%;
+	margin-left: 30%;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
 }
 .meet-medlio {
 	height: 600px;
@@ -253,8 +259,25 @@ div.features-white {
 }
 footer {
 	background-color: #414142;
+	padding-bottom: 2em;
+	height: 100%
 }
-
+.footer-logo {
+	display: block;
+	position: relative;
+	top: -40px;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+.footer-top {
+	padding-bottom: 2em;
+	border-bottom: 1px solid #fff;
+}
+.footer-bottom {
+	padding-top: 2em;
+	font-size: 0.9em;
+}
 /* Images */
 img.logo {
 	width: 100%;
@@ -272,6 +295,9 @@ img.girl{
 	position: absolute;
 	bottom: -190px;
 	right: 140px;
+}
+.washingtonpost img, .gigaom img {
+	margin-top: 0.7em;
 }
 
 /* Media query */
