@@ -4,7 +4,7 @@
 	border: 1px solid #eee;
 	min-height: 50px;
 }
-header [class*="col-"], .main [class*="col-"], .learn [class*="col-"] {
+header [class*="col-"], .main [class*="col-"], .learn [class*="col-"], .features [class*="col-"] {
 	border: none;
 }
 
@@ -58,6 +58,7 @@ table {
 /* Base Rules */
 body {
 	font-family: 'Open Sans', sans-serif;
+	color: #666;
 }
 header {
 	padding-top: 1.4em;
@@ -79,7 +80,7 @@ hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn, a p.watch-video
 .learn a {
 	text-decoration: none;
 }
-h1, p.login, p.signup, p.watch-video, p.features, button.geolocation, .find ul.dropdown-menu {
+h1, p.login, p.signup, p.watch-video, h2.features, button.geolocation, .find ul.dropdown-menu {
 	text-transform: uppercase;
 }
 hgroup {
@@ -95,9 +96,38 @@ h1 {
 h2 {
 	font-size: 1.5em;
 }
+h3 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
 .menu .glyphicon-align-justify {
 	font-size: 1.4em;
 	padding-top: 0.3em;
+}
+.features {
+	text-align: center;
+}
+.features-white {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+.features h3, h2.features {
+	color:#ef4423;
+}
+h2.features {
+	width: 60%;
+	font-size: 1.6em;
+	background: #fff;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+	margin-left: 20%;
+	border: 2px solid #ccc;
+}
+.features h3 {
+	font-weight: bold;
+}
+.features p {
+	line-height: 1.6em;
 }
 p.login, p.signup, p.watch-video {
 	display: block;
@@ -117,9 +147,8 @@ p.learn {
 	line-height: 2em;
 	padding-right: 2em;
 }
-p.watch-video, p.features {
+p.watch-video, h2.features {
 	text-align: center;
-
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
@@ -127,14 +156,6 @@ p.watch-video {
 	width: 60%;
 	margin-top: 1.2em;
 	border: 2px solid #fff;
-}
-p.features {
-	font-size: 1.6em;
-	color:#ef4423;
-	background: #fff;
-	margin-top: 1.2em;
-	margin-bottom: 1.2em;
-	border: 2px solid #ccc;
 }
 .meet-medlio {
 	height: 600px;
@@ -267,6 +288,13 @@ img.girl{
 	h2 {
 		font-size: 1em;
 	}
+	h2.features {
+		width: 60%;
+		margin-left: 20%;
+	}
+	p.watch-video {
+		width: 100%;
+	}
 	.meet-medlio {
 		height: 420px;
 		background-image: url('../img/three-phones-small.png');
@@ -274,12 +302,11 @@ img.girl{
 		background-position: center 300px;
 		background-size: 90%;
 	}
-	p.watch-video {
-		width: 100%;
+	.features-white {
+		padding-top: 0.8em;
 	}
-	p.features {
-		width: 80%;
-		margin-left: 10%;
+	img.features {
+		margin-top: 1.5em;
 	}
 }
 @media screen and (max-width: 530px) {
@@ -302,10 +329,23 @@ img.girl{
 		background-position: center 340px;
 		background-size: 90%;
 	}
+	.features-white {
+		padding-top: 0.8em;
+	}
+	img.features {
+		margin-top: 1.5em;
+	}
 }
 @media screen and (min-width : 528px) and (max-width : 768px) {
 	hgroup {
 		margin-bottom: 2em;
+	}
+	h2.features {
+		width: 50%;
+		margin-left: 25%;
+	}
+	p.watch-video {
+		width: 50%;
 	}
 	.meet-medlio {
 		height: 460px;
@@ -314,12 +354,11 @@ img.girl{
 		background-position: center 300px;
 		background-size: 90%;
 	}
-	p.watch-video {
-		width: 50%;
+	.features-white {
+		padding-top: 0.8em;
 	}
-	p.features {
-		width: 60%;
-		margin-left: 20%;
+	img.features {
+		margin-top: 1.5em;
 	}
 }
 @media screen and (min-width : 768px) and (max-width : 996px) {
@@ -333,18 +372,15 @@ img.girl{
 		background-position: center 240px;
 		background-size: 90%;
 	}
-	p.features {
-		width: 100%;	
-		font-size: 1.2em;
+	.features-white {
+		padding-top: 2em;
 	}
 }
 @media screen and (min-width : 768px) and (max-width : 1200px) {
 	p.watch-video {
 		width: 80%;
 	}
-	
 }
-
 @media screen and (min-width : 996px) and (max-width : 1200px) {
 	.meet-medlio {
 		height: 500px;
