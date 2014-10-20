@@ -65,12 +65,10 @@ header {
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #fff;
 }
-header [class*="col-"] {
-	padding: 0;
-}
 header, .main {
 	background-color: #ef4423;
 }
+
 hgroup, .menu .glyphicon-align-justify, .login, .signup, .learn, a p.watch-video, footer {
 	color: #fff;
 }
@@ -136,7 +134,7 @@ header p.login, header p.signup {
 }
 p.login, p.signup {
 	border: 2px solid #fff;
-	width: 60%;
+	width: 80%;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	margin-top: 0.1em;
@@ -301,8 +299,14 @@ img.girl{
 
 /* Media query */
 @media screen and (min-width : 320px) and (max-width : 480px) {
-	.glyphicon-align-justify {
-		padding-top: 0.1em;
+	header .menu, header .logo, header .login, header .signup {
+	padding-right: 0;
+	}
+	header .logo {
+	padding-left: 0;
+	}
+	header .login, header .signup {
+	padding-left: 2px;
 	}
 	hgroup {
 		margin-bottom: 2em;
@@ -329,6 +333,9 @@ img.girl{
 	}
 	.features-white {
 		padding-top: 0.8em;
+	}
+	header img.logo {
+		padding-top: 0.3em;
 	}
 	img.features {
 		margin-top: 1.5em;
@@ -420,7 +427,7 @@ img.girl{
 @media screen and (max-width: 594px) {
 	p.login, p.signup {
 		font-size: 0.8em;
-		width: 80%;
+		width: 100%;
 	}
 }
 @media screen and (max-width: 768px) {
