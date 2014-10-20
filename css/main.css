@@ -302,7 +302,7 @@ img.girl{
 	header .menu, header .logo, header .login, header .signup {
 	padding-right: 0;
 	}
-	header .logo {
+	header .menu, header .logo {
 	padding-left: 0;
 	}
 	header .signup {
