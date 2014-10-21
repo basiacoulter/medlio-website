@@ -305,8 +305,15 @@ img.girl{
 	header .menu, header .logo {
 	padding-left: 0;
 	}
+	header .logo {
+		margin-left: -4px;
+	}
+	header .login {
+		margin-left: -10px;
+	}
 	header .signup {
 	padding-left: 4px;
+	margin-right: -4px;
 	}
 	hgroup {
 		margin-bottom: 2em;
@@ -320,6 +327,10 @@ img.girl{
 	h2.features {
 		width: 60%;
 		margin-left: 20%;
+	}
+	p.login, p.signup {
+		padding-right: 2px;
+		padding-left: 2px;
 	}
 	p.watch-video {
 		width: 100%;
