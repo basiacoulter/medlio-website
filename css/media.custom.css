@@ -51,6 +51,15 @@
 	header img.logo {
 		padding-top: 0.3em;
 	}
+	header div.google {
+		float: right;
+	}
+	header div.appstore {
+		float: right;
+	}
+	header img.google {
+		padding-top: 0.6em;
+	}
 	img.features {
 		margin-top: 1.5em;
 	}
