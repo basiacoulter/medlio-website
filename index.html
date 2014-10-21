@@ -6,7 +6,10 @@
 	<title>Home - Medlio</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/media.custom.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,600,600italic,700italic' rel='stylesheet' type='text/css'>
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="http://ui.medl.io/images/favicon.png" />
 <body class="home">
 	<div class="container-fluid">
 		<header class="row">
@@ -16,13 +19,13 @@
 						<span class="glyphicon glyphicon-align-justify"></span>
 					</div>
 					<div class="logo col-xs-4 col-sm-2 col-sm-push-4">
-						<img class="logo" src="img/medlio-logo.svg" alt="Medlio logo">
+						<a href="http://medl.io/"><img class="logo" src="img/medlio-logo.svg" alt="Medlio logo"></a>
 					</div>
 					<div class="login col-xs-3 col-sm-2 col-sm-offset-1 col-sm-push-4">
-						<p class="login">Login</p>
+						<a href="#"><p class="login">Login</p></a>
 					</div>
 					<div class="signup col-xs-3 col-sm-2 col-sm-push-4">
-						<p class="signup">Sign Up</p>
+						<a href="http://medl.io/coming-soon"><p class="signup">Sign Up</p></a>
 					</div>
 					<div class="google col-xs-6 col-sm-2 col-sm-pull-7">
 						<a href="https://play.google.com/store/apps/details?id=com.medl.io.patientapp" target="_blank"><img class="google img-responsive" src="img/googleplay.png" alt="GooglePlay"></a>
@@ -151,26 +154,40 @@
 			<div class="footer-bottom col-xs-12, col-sm-12">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-4">
-							
+						<div class="social col-xs-12 col-sm-4">
+							<ul class="icons">
+								<a class="twitter" href="https://twitter.com/medlio" target="_blank"><li class="twitter">
+									<i class="fa fa-twitter"></i>
+								</li></a>
+								<a class="facebook" href="https://www.facebook.com/Medlio" target="_blank"><li class="facebook">
+									<i class="fa fa-facebook"></i>
+								</li></a>
+								<a class="linkedin" href="https://www.linkedin.com/company/medlio" target="_blank"><li class="linkedin">
+									<i class="fa fa-linkedin"></i>
+								</li></a>
+								<a class="angel" href="https://angel.co/medlio" target="_blank"><li class="angel">
+									<i class="fa fa-angellist"></i>
+								</li></a>
+							</ul>
+						</div>
+						<div class="signup col-xs-12 col-sm-4">
+							<a href="http://medl.io/coming-soon"><p class="signup">Sign Up</p></a>
 						</div>
 						<div class="col-xs-12 col-sm-4">
-							<p class="signup">Sign Up</p>
-						</div>
-						<div class="col-xs-12 col-sm-4">
-							
+							<a href="https://itunes.apple.com/us/app/medlio/id650872228?mt=8" target="_blank"><img class="appstore img-responsive" src="img/appstore.png" alt="Appstore"></a>
+							<a href="https://play.google.com/store/apps/details?id=com.medl.io.patientapp" target="_blank"><img class="google img-responsive" src="img/googleplay.png" alt="GooglePlay"></a>
 						</div>
 					</div><!--end row-->
-					<div class="row">
-						<div class="col-xs-12 col-sm-4">
-							<p>PRIVACY POLICY</p>
-							<p>TERMS AND CONDITIONS</p>
+					<div class="additional-info row">
+						<div class="left-bottom col-xs-12 col-sm-4">
+							<a href="http://www.medl.io/@privacy-policy"><p class="privacy" >PRIVACY POLICY</p></a>
+							<a href="http://www.medl.io/@terms-and-conditions"><p class="terms" >TERMS AND CONDITIONS</p></a>
 						</div>
 						<div class="mid-bottom col-xs-12 col-sm-4">
-							<p>PROVIDERS &bull; PAYERS &bull; EMPLOYERS</p>
+							<p class="client-groups"><a href="http://www.medl.io/@providers">PROVIDERS</a> &bull; <a href="http://www.medl.io/@payers">PAYERS</a> &bull; <a href="#">EMPLOYERS</a></p>
 						</div>
-						<div class="col-xs-12 col-sm-4">
-							<p>© Copyright 2014 Medlio Inc. All rights reserved.</p>
+						<div class="right-bottom col-xs-12 col-sm-4">
+							<p class="copyright">© Copyright 2014 Medlio Inc. All rights reserved.</p>
 						</div>
 					</div><!--end row-->
 				</div>
