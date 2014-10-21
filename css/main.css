@@ -64,8 +64,8 @@ body {
     overflow-x: hidden;
 }
 header {
-	padding-top: 1.4em;
-	padding-bottom: 0.5em;
+	padding-top: 2em;
+	padding-bottom: 1.8em;
 	border-bottom: 1px solid #fff;
 }
 .home header, .home .main {
@@ -140,7 +140,6 @@ p.login, p.signup {
 	width: 80%;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	margin-top: 0.1em;
 }
 p.learn {
 	font-style: italic;
